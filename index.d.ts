@@ -16,7 +16,7 @@
 *~ workarounds for this limitation of ES6 modules.
 */
 
-import { ClientOpts, RedisClient } from "redis";
+import { RedisClientOptions, RedisClientType } from "redis";
 
 /*~ This declaration specifies that the class constructor function
 *~ is the exported object from the file
@@ -57,8 +57,8 @@ declare namespace RedisSMQ {
 		host?: string;
 		port?: number;
 		ns?: string;
-		options?: ClientOpts;
-		client?: RedisClient;
+		options?: RedisClientOptions;
+		client?: RedisClientType;
 		password?: string;
 	}
 
